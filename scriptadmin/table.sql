@@ -103,7 +103,7 @@ create table caracteristique(
     largeur double precision,
     hauteur double precision,
     volumeducoffre double precision,
-    commission double precision,
+    commission double precision
 );
 
 select nomclient,prenomclient,prixdevente,nommarque,nommodel,nomcouleur,nomlocalisation from v_liste_annonce ;
