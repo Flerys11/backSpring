@@ -2,6 +2,7 @@ package com.pack.varotrafiaraoccasion.Controlleur;
 import com.pack.varotrafiaraoccasion.Entity.Boitdevitesse;
 import com.pack.varotrafiaraoccasion.Entity.Couleur;
 import com.pack.varotrafiaraoccasion.Service.BoitdevitesseService;
+import com.pack.varotrafiaraoccasion.Service.ClientService;
 import com.pack.varotrafiaraoccasion.Service.CouleurService;
 import com.pack.varotrafiaraoccasion.Service.EnergieService;
 import com.pack.varotrafiaraoccasion.Service.EquipementService;
@@ -45,6 +46,7 @@ public class InitialisationDonneReact {
     private final CouleurService couleurService;
     private final EquipementService equipementService;
     private final GenreService genreService;
+    private final ClientService clientService;
 
     @GetMapping("/varotrafiaraback/initialisation")
     public Returntype init(){
@@ -61,6 +63,7 @@ public class InitialisationDonneReact {
             hashMap.put("coleur", couleurService.findAll());
             hashMap.put("equipement", equipementService.findAll());
             hashMap.put("genre", genreService.findAll());
+            // hashMap.put("client", clientService.findOne(null));
             returntype = new Returntype(null,hashMap);
         } catch (Exception e) {
             returntype = new Returntype(e.getMessage(),null);

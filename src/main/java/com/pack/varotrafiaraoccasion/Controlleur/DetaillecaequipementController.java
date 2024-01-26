@@ -27,7 +27,7 @@ public class DetaillecaequipementController {
  private final DetaillecaequipementService detaillecaequipementService;
     
     @PostMapping("/varotrafiaraback/detaillecaequipementstring")
-    public Returntype  insertstring(@RequestParam("equipement") String equipement,HttpSession httpSession){
+    public Returntype  insertstring(@RequestBody Long[] equipement,HttpSession httpSession){
         Returntype returntype = new Returntype();
         try {
             httpSession.setAttribute("equipement", equipement);

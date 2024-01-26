@@ -38,4 +38,10 @@ public class Equipement{
               public String getNomequipement(){
                   return this.nomequipement;
               }
+
+            public Equipement(Long idequipement, String nomequipement) {
+                this.idequipement = idequipement;
+                this.nomequipement = nomequipement;
+            }
+
 }

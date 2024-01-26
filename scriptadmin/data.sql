@@ -6,6 +6,7 @@ insert into typevehicule values (5,'Pick-up');
 insert into typevehicule values (6,'Voiture societe,commerciale');
 insert into typevehicule values (7,'Camion (plus de 3,5t)');
 
+
 insert into marque values (1,'Peugeot');
 insert into marque values (2,'Renault');
 insert into marque values (3,'Audie');
@@ -91,7 +92,8 @@ insert into localisation values (3,'Fianarantsoa');
 insert into localisation values (4,'Mahajanga');
 insert into localisation values (5,'Toamasina');
 insert into localisation values (6,'Toliara');
-
+insert into localisation values (7,'Majugna');
+insert into localisation values (8,'Nosi be');
 
 insert into boitdevitesse values (1,'manuelle');
 insert into boitdevitesse values (2,'automatique');
@@ -107,3 +109,88 @@ insert into genre values (3,'AUtre');
 insert into etat values (1,'annonce');
 insert into etat values (2,'validee');
 insert into etat values (3,'vendu');
+
+insert into caracteristique values (1,1,1,1,1,12,2,2,5, 550.5,75000.25,'2019-05-15','2022-08-20',65.75, 6.8,18500.0,4,5,4.75,1.85,1.65,500.25,20);
+insert into detaillecaequipement values (1,1,1);
+insert into detaillecaequipement values (2,1,2);
+insert into detaillecaequipement values (3,1,3);
+insert into detaillecaequipement values (4,1,4);
+
+insert into photocaracteristique values (1,1,'2a3763f230ca43682c1435d548706df0.jpg');
+insert into photocaracteristique values (2,1,'3e892d49e833b6c750bfcd8855210848.jpg');
+insert into photocaracteristique values (3,1,'5dfd27447a39991d78023f2283579253.jpg');
+insert into photocaracteristique values (4,1,'8b188b01c93c5040af4bd5b9b5083c88.jpg');
+insert into photocaracteristique values (5,1,'341b50f8370f2863f7f557fc5caceab2.jpg');
+
+
+insert into caracteristique values (2,1,1,1,1,12,2,2,5, 550.5,75000.25,'2019-05-15','2022-08-20',65.75, 6.8,18500.0,4,5,4.75,1.85,1.65,500.25,20);
+insert into detaillecaequipement values (5,2,5);
+insert into detaillecaequipement values (6,2,6);
+insert into detaillecaequipement values (7,2,7);
+insert into detaillecaequipement values (8,2,8);
+insert into photocaracteristique values (6,2,'6474c14123450a77b5b3b74d863e7932.jpg');
+insert into photocaracteristique values (7,2,'569828c8da6caafdf02d622998732295.jpg');
+insert into photocaracteristique values (8,2,'cf99b75de796a6772c14f00f47abc75c.jpg');
+insert into photocaracteristique values (9,2,'da0854ae037c464bee860f9bc4bc00c7.jpg');
+insert into photocaracteristique values (10,2,'f947a2a581389a1c9f0c52aff92e17d8');
+
+
+
+insert into caracteristique values (3,1,1,1,1,12,2,2,5, 550.5,75000.25,'2019-05-15','2022-08-20',65.75, 6.8,18500.0,4,5,4.75,1.85,1.65,500.25,20);
+insert into detaillecaequipement values (9,3,1);
+insert into detaillecaequipement values (10,3,2);
+insert into detaillecaequipement values (11,3,3);
+insert into detaillecaequipement values (12,3,4);
+
+insert into photocaracteristique values (11,3,'2a3763f230ca43682c1435d548706df0.jpg');
+insert into photocaracteristique values (12,3,'3e892d49e833b6c750bfcd8855210848.jpg');
+insert into photocaracteristique values (13,3,'5dfd27447a39991d78023f2283579253.jpg');
+insert into photocaracteristique values (14,3,'8b188b01c93c5040af4bd5b9b5083c88.jpg');
+insert into photocaracteristique values (15,3,'341b50f8370f2863f7f557fc5caceab2.jpg');
+
+
+insert into caracteristique values (4,1,1,1,1,12,2,2,5, 550.5,75000.25,'2019-05-15','2022-08-20',65.75, 6.8,18500.0,4,5,4.75,1.85,1.65,500.25,20);
+insert into detaillecaequipement values (13,4,5);
+insert into detaillecaequipement values (14,4,6);
+insert into detaillecaequipement values (15,4,7);
+insert into detaillecaequipement values (16,4,8);
+
+insert into photocaracteristique values (16,4,'6474c14123450a77b5b3b74d863e7932.jpg');
+insert into photocaracteristique values (17,4,'569828c8da6caafdf02d622998732295.jpg');
+insert into photocaracteristique values (18,4,'cf99b75de796a6772c14f00f47abc75c.jpg');
+insert into photocaracteristique values (19,4,'da0854ae037c464bee860f9bc4bc00c7.jpg');
+insert into photocaracteristique values (20,4,'f947a2a581389a1c9f0c52aff92e17d8.jpg');
+
+
+insert into caracteristique values (5,1,1,1,1,12,2,2,5, 550.5,75000.25,'2019-05-15','2022-08-20',65.75, 6.8,18500.0,4,5,4.75,1.85,1.65,500.25,20);
+insert into detaillecaequipement values (17,5,1);
+insert into detaillecaequipement values (18,5,2);
+insert into detaillecaequipement values (19,5,3);
+insert into detaillecaequipement values (20,5,4);
+
+insert into photocaracteristique values (21,5,'2a3763f230ca43682c1435d548706df0.jpg');
+insert into photocaracteristique values (22,5,'3e892d49e833b6c750bfcd8855210848.jpg');
+insert into photocaracteristique values (23,5,'5dfd27447a39991d78023f2283579253.jpg');
+insert into photocaracteristique values (24,5,'8b188b01c93c5040af4bd5b9b5083c88.jpg');
+insert into photocaracteristique values (25,5,'341b50f8370f2863f7f557fc5caceab2.jpg');
+
+
+insert into caracteristique values (6,1,1,1,1,12,2,2,5, 550.5,75000.25,'2019-05-15','2022-08-20',65.75, 6.8,18500.0,4,5,4.75,1.85,1.65,500.25,20);
+insert into detaillecaequipement values (21,6,5);
+insert into detaillecaequipement values (22,6,6);
+insert into detaillecaequipement values (23,6,7);
+insert into detaillecaequipement values (24,6,8);
+
+insert into photocaracteristique values (26,6,'6474c14123450a77b5b3b74d863e7932.jpg');
+insert into photocaracteristique values (27,6,'569828c8da6caafdf02d622998732295.jpg');
+insert into photocaracteristique values (28,6,'cf99b75de796a6772c14f00f47abc75c.jpg');
+insert into photocaracteristique values (29,6,'da0854ae037c464bee860f9bc4bc00c7.jpg');
+insert into photocaracteristique values (30,6,'f947a2a581389a1c9f0c52aff92e17d8.jpg');
+
+
+
+select idequipement,nomequipement,nomimage from v_liste_annonce WHERE idcaracteristique=1;
+
+select * from photocaracteristique;
+
+select COUNT(*) from historiqueetat join caracteristique on historiqueetat.idcaracteristique=caracteristique.idcaracteristique where idetat=1 and idfmarque=7;

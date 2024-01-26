@@ -13,5 +13,11 @@ public class WebConfig implements WebMvcConfigurer {
                 .allowedMethods("GET", "POST", "PUT", "DELETE") // Méthodes autorisées
                 .allowedHeaders("Origin", "X-Requested-With", "Content-Type", "Accept"); // En-têtes autorisés
     }
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry
+            .addResourceHandler("/images/**")  // Le chemin d'accès URL pour les images
+            .addResourceLocations("classpath:/static/images/");  // L'emplacement réel des images dans votre projet
+    }
 }
 
