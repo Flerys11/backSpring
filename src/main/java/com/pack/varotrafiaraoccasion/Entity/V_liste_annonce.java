@@ -1,14 +1,17 @@
 
 package com.pack.varotrafiaraoccasion.Entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.SequenceGenerator;
+import jakarta.persistence.Table;
 
 
 @Entity
+@Table(name = "v_liste_annonce")
 public class V_liste_annonce{
 
     public V_liste_annonce(){}
@@ -22,42 +25,48 @@ public class V_liste_annonce{
             strategy = GenerationType.SEQUENCE,
             generator = "v_liste_annonce_sequence"
         )
-          Double commission;
-          Double volumeducoffre;
-          Double hauteur;
-          Double largeur;
-          Double longueur;
-          Integer nbrplace;
-          Integer nbrporte;
-          Double prixdevente;
-          Double capacite;
-          java.util.Date annemodel;
-          java.util.Date anneedefabrication;
-          Double kilometrage;
-          Double autonomie;
-          String nomlocalisation;
-          Long idlocalisation;
-          String nometat;
-          Long idetat;
-          String nomboitdereception;
-          Long idboitedevitesse;
-          String nommarque;
-          Long idmarque;
-          String nommodel;
-          Long idmodel;
-          String nomenergie;
-          Long idenergie;
-          String nomtypevehicule;
-          Long idtypevehicule;
-          String nomcouleur;
-          Long idcouleur;
-          String nomclient;
-          String prenomclient;
-          String tel;
-          String email;
-          Long idequipement;
-          String nomequipement;
-          String nomimage;
+      
+        Double consomation;
+        Long idclient;
+        Long idphotocaracteristique;
+        Long  idcaracteristique;
+        Double commission;
+        Double volumeducoffre;
+        Double hauteur;
+        Double largeur;
+        Double longueur;
+        Integer nbrplace;
+        Integer nbrporte;
+        Double prixdevente;
+        Double capacite;
+        java.util.Date annemodel;
+        java.util.Date anneedefabrication;
+        Double kilometrage;
+        Double autonomie;
+        String nomlocalisation;
+        Long idlocalisation;
+        String nometat;
+        Long idetat;
+        String nomboitdereception;
+        Long idboitedevitesse;
+        String nommarque;
+        Long idmarque;
+        String nommodel;
+        Long idmodel;
+        String nomenergie;
+        Long idenergie;
+        String nomtypevehicule;
+        Long idtypevehicule;
+        String nomcouleur;
+        Long idcouleur;
+        String nomclient;
+        String prenomclient;
+        String tel;
+        String email;
+        Long idequipement;
+        String nomimage;
+        String nomequipement;
+        
               public void setCommission( Double commission){
                   this.commission=commission;
               }
@@ -310,4 +319,40 @@ public class V_liste_annonce{
               public String getNomimage(){
                   return this.nomimage;
               }
+            public Long getIdcaracteristique() {
+                return idcaracteristique;
+            }
+
+            public void setIdcaracteristique(Long idcaracteristique) {
+                this.idcaracteristique = idcaracteristique;
+            }
+            public Long getIdphotocaracteristique() {
+                return idphotocaracteristique;
+            }
+
+            public void setIdphotocaracteristique(Long idphotocaracteristique) {
+                this.idphotocaracteristique = idphotocaracteristique;
+            }
+            public Long getIdclient() {
+                return idclient;
+            }
+    
+            public void setIdclient(Long idclient) {
+                this.idclient = idclient;
+            }
+            public Double getConsomation() {
+                return consomation;
+            }
+    
+            public void setConsomation(Double consomation) {
+                this.consomation = consomation;
+            }
+            Long idfavorie;
+            public Long getIdfavorie() {
+                return idfavorie;
+            }
+    
+            public void setIdfavorie(Long idfavorie) {
+                this.idfavorie = idfavorie;
+            }
 }

@@ -32,6 +32,18 @@ public class CaracteristiqueController {
         this.caracteristiqueService= caracteristiqueService;
     }
 
+    @PostMapping("/varotrafiaraback/ajoutcommission")
+    public Returntype ajoutCommision(@RequestParam("id") Long idCaracteristique,@RequestParam("id") Long idadmin){
+        Returntype returntype = new Returntype();
+        try {
+            returntype = new Returntype(null,caracteristiqueService.findAll());
+        } catch (Exception e) {
+            returntype = new Returntype(e.getMessage(),null);
+            return returntype;
+        }
+        return returntype;
+    }
+
     @GetMapping("/varotrafiaraback/caracteristiques")
     public Returntype findAll(){
         Returntype returntype = new Returntype();
@@ -84,6 +96,7 @@ public class CaracteristiqueController {
 
     @PostMapping("/varotrafiaraback/caracteristique")
     public Returntype  insert(@RequestBody Caracteristique table,HttpSession httpSession){
+        System.out.println("auto :"+table.getAutonomie());
         httpSession.setAttribute("caracteristique", table);
         Returntype returntype = new Returntype();
         try {

@@ -1,6 +1,8 @@
 
 package com.pack.varotrafiaraoccasion.Entity;
 
+import java.util.Date;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -257,4 +259,35 @@ public class Caracteristique{
               public Double getCommission(){
                   return this.commission;
               }
+
+            public Caracteristique(Long idcaracteristique, Long idfetat, Long idclient, Long idfboitedevitesse,
+                    Long idfmarque, Long idfmodel, Long idfenergie, Long idftypevehicule, Long idlocalisation,
+                    Double autonomie, Double kilometrage, Date anneedefabrication, Date annemodel, Double capacite,
+                    Double consomation, Double prixdevente, Long coleur, Integer nbrporte, Integer nbrplace,
+                    Double longueur, Double largeur, Double hauteur, Double volumeducoffre, Double commission) {
+                this.idcaracteristique = idcaracteristique;
+                this.idfetat = idfetat;
+                this.idclient = idclient;
+                this.idfboitedevitesse = idfboitedevitesse;
+                this.idfmarque = idfmarque;
+                this.idfmodel = idfmodel;
+                this.idfenergie = idfenergie;
+                this.idftypevehicule = idftypevehicule;
+                this.idlocalisation = idlocalisation;
+                this.autonomie = autonomie;
+                this.kilometrage = kilometrage;
+                this.anneedefabrication = anneedefabrication;
+                this.annemodel = annemodel;
+                this.capacite = capacite;
+                this.consomation = consomation;
+                this.prixdevente = prixdevente;
+                this.coleur = coleur;
+                this.nbrporte = nbrporte;
+                this.nbrplace = nbrplace;
+                this.longueur = longueur;
+                this.largeur = largeur;
+                this.hauteur = hauteur;
+                this.volumeducoffre = volumeducoffre;
+                this.commission = commission;
+            }
 }

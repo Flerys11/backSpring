@@ -50,6 +50,20 @@ public class AuthenticationService {
         .token(jwtTokem)
         .build();
     }
+    public AuthenticationResponse registeradmin(Utilisateur request){
+        System.out.println("pseudo "+request.getPseudo());
+         Utilisateur user = Utilisateur.builder()
+        .pseudo(request.getPseudo())
+        .password(passwordEncoder.encode(request.getPassword()))
+        .role(Role.ADMIN)//tokony atao anaty base
+        .build();
+        var savedUser = repository.save(user);
+        var jwtTokem = tokenService.generateToken(user);
+        saveUserToken(savedUser, jwtTokem);
+        return AuthenticationResponse.builder()
+        .token(jwtTokem)
+        .build();
+    }
 
     public AuthenticationResponse authenticate(AuthenticationRequest request){
         authenticationManager.authenticate(

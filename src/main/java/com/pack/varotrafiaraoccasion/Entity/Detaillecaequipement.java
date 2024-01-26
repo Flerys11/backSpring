@@ -46,4 +46,11 @@ public class Detaillecaequipement{
               public Long getIdfequipement(){
                   return this.idfequipement;
               }
+
+            public Detaillecaequipement(Long iddetaillecaequipement, Long idfcaracteristique, Long idfequipement) {
+                this.iddetaillecaequipement = iddetaillecaequipement;
+                this.idfcaracteristique = idfcaracteristique;
+                this.idfequipement = idfequipement;
+            }
+              
 }

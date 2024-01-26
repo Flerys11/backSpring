@@ -46,4 +46,11 @@ public class Photocaracteristique{
               public String getNomimage(){
                   return this.nomimage;
               }
+
+            public Photocaracteristique(Long idphotocaracteristique, Long idfcaracteristique, String nomimage) {
+                this.idphotocaracteristique = idphotocaracteristique;
+                this.idfcaracteristique = idfcaracteristique;
+                this.nomimage = nomimage;
+            }
+              
 }

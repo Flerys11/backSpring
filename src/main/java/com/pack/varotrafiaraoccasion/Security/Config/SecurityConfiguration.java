@@ -33,6 +33,7 @@ public class SecurityConfiguration {
     // tout ses url en une acces public il n'ont pas besoin d'authentification
     private static final String[] WHITE_LIST_URL = {
         "/varotrafiaraback/**",
+        "/images/**",
     };
 
     private  final AuthenticationFilter jwtAuthFilter;
